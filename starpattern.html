@@ -7,15 +7,37 @@
 </head>	
 <body>
 	<script>
-		<!---pyramid star pattern--->
-		for(i=1;i<=5;i++){
-			for(j=0;j<=5-i;j++){
-				console.log("&nbsp");
+		<!---1.pyramid star pattern--->
+		for(let i=1;i<=5;i++){
+			for(let j=0;j<=5-i;j++){
+				document.write("&nbsp");
 			}
-			for(k=1;k<=i;k++{
-				console.log("*")
+			for(let k=1;k<=i;k++){
+				document.write("*");
 			}
-			console.log("<br>")
+			document.write("<br>")
+		}
+		<!---2. right triangle star pattern--->
+		for(let a=1;a<=5;a++){
+			for(let b=1;b<=a;b++){
+				document.write("*");
+			}
+			document.write("<br>");
+		}
+		document.write("<br>");
+		<!---3.Downward Triangle star pattern--->
+		for(let x=5;x>=1;x--){
+			for(let y=1;y<=x;y++){
+				document.write("*");
+			}
+			document.write("<br>");
+		}
+		<!----4.Right side triangle number pattern-->
+		for(let c=1;c<=5;c++){
+			for(let d=1;d<=c;d++){
+				document.write(c);
+			}
+			document.write("<br>");
 		}
 	</script>
 </body>
